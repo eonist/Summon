@@ -1,11 +1,11 @@
+import UIKit
+
 /**
  * TODO: Bluetooth nearfield detection Exchange id
  * TODO: CloudKit send ping to other user UUID
  * TODO: Altimeter detect stair flight count 👈
  * TODO: Basic UI 👈
  */
-
-import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
