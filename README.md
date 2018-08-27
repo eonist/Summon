@@ -14,6 +14,7 @@ Summon is an Apple-watch app that let's a person summon another person to an exa
 - GPS detect X/Y long/lat coordinates
 - Building and Room data is provided through a BIM service API
 - Through a Basic UI, the Summoned user are guided to the summoner
+- Subtle vibrations let's both users know about progression
 
 
 ### **UX-flow**:
@@ -23,7 +24,7 @@ Summon is an Apple-watch app that let's a person summon another person to an exa
 ### **How to get it**: 
 [App store (coming soon)](https://www.google.com/comingsoon) 
 
-### **Resources**:
+### **Research**:
 - In-depth Apple-watch CoreBluetooth tutorial: https://www.raywenderlich.com/336-core-bluetooth-in-watchos-tutorial
 - Detecting BT signal strength: https://stackoverflow.com/questions/33394740/watch-os-2-is-it-possible-to-get-bluetooth-signal-strength-of-connectivity-betw
 - Notifications via CloudKit: https://www.hackingwithswift.com/read/33/8/delivering-notifications-with-cloudkit-push-messages-ckquerysubscription
