@@ -26,7 +26,7 @@ Summon is an Apple-watch app that let's a person summon another person to an exa
 
 ### Q & A:
 
-**Q:** How do you do room detection and routing?
+**Q:** How do you do room detection and routing?  
 **A:** BIM service api. Basically it's the worldwide industry standard for getting building data. You can ask the service for building name and room name for your lat/long/alt. You can also get boundary box, room centre etc. To calc entering and exiting rooms. GPS inside buildings are sometimes difficult, but more and more buildings are adding GPS extenders. And apples CoreLocation relies on GPS, CellTower, wifi so should be fine for simple stuff.
 
 ### **Research**:
