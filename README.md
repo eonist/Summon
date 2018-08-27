@@ -5,16 +5,16 @@
 <img width="234" alt="img" src="https://rawgit.com/stylekit/img/master/summon_logo.svg">
 
 ### **What is it**:
-Summon is an Apple-watch app that let's a person summon another person to an exact location within a building. 
+Summon is an Apple-watch app that lets a person summon another person to an exact location within a building. 
 
 ### **How does it work**: 
 - Bluetooth near-field detection exchange (UUID) between two watches
-- CloudKit sends Notification to the summoned user (UUID)
+- CloudKit sends notification to the summoned user (UUID)
 - Altimeter detect stair flight change and altitude (Z)
-- GPS detect X/Y long/lat coordinates
-- Building and Room data is provided through a BIM service API
-- Through a Basic UI, the Summoned user are guided to the summoner
-- Subtle vibrations let's both users know about progression
+- GPS detects X/Y long/lat coordinates
+- Building and room data is provided through a BIM service API
+- Through a basic UI, the summoned user is guided to the summoner
+- Subtle vibrations let both users know about progression
 
 
 ### **UX-flow**:
