@@ -12,8 +12,8 @@ Summon is an Apple-watch app that let's a person summon another person to an exa
 - CloudKit sends Notification to the summoned user (UUID)
 - Altimeter detect stair flight change and altitude (Z)
 - GPS detect X/Y long/lat coordinates
-- Building and Room data is provided through a BIM service API
-- Through a Basic UI, the Summoned user are guided to the summoner
+- Building and Room data is provided through a BIM service API 
+- Through a Basic UI, the Summoned user is guided to the summoner
 - Subtle vibrations let's both users know about progression
 
 
