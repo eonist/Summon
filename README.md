@@ -19,7 +19,7 @@ Summon is an Apple-watch app that let's a person summon another person to an exa
 
 ### **UX-flow**:
 
-<img width="682" alt="img" src="https://rawgit.com/stylekit/img/master/summon_deck_dark_4.png">  
+<img width="682" alt="img" src="https://rawgit.com/stylekit/img/master/summon_deck_dark_5.png">  
 
 ### **How to get it**: 
 [App store (coming soon)](https://www.google.com/comingsoon) 
