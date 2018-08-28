@@ -20,6 +20,7 @@
 		F1114E4121347FEA006C99BB /* SendButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1114E4021347FEA006C99BB /* SendButton.swift */; };
 		F1114E43213482AF006C99BB /* AcceptButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1114E42213482AF006C99BB /* AcceptButton.swift */; };
 		F1114E4521348590006C99BB /* DeclineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1114E4421348590006C99BB /* DeclineButton.swift */; };
+		F1114E4721351C07006C99BB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1114E4621351C07006C99BB /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		F1114E4021347FEA006C99BB /* SendButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendButton.swift; sourceTree = "<group>"; };
 		F1114E42213482AF006C99BB /* AcceptButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptButton.swift; sourceTree = "<group>"; };
 		F1114E4421348590006C99BB /* DeclineButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeclineButton.swift; sourceTree = "<group>"; };
+		F1114E4621351C07006C99BB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				F1114E3221347EBE006C99BB /* lib */,
 				F1114E3921347EBF006C99BB /* view */,
 				F1114E22213443E8006C99BB /* ViewController.swift */,
+				F1114E4621351C07006C99BB /* MainView.swift */,
 				F1114E24213443E8006C99BB /* Main.storyboard */,
 				F1114E27213443E8006C99BB /* Assets.xcassets */,
 				F1114E29213443E8006C99BB /* LaunchScreen.storyboard */,
@@ -198,6 +201,7 @@
 				F1114E43213482AF006C99BB /* AcceptButton.swift in Sources */,
 				F1114E21213443E8006C99BB /* AppDelegate.swift in Sources */,
 				F1114E3C21347EBF006C99BB /* ConstraintKind.swift in Sources */,
+				F1114E4721351C07006C99BB /* MainView.swift in Sources */,
 				F1114E3F21347EBF006C99BB /* ActionButton.swift in Sources */,
 				F1114E4521348590006C99BB /* DeclineButton.swift in Sources */,
 				F1114E3B21347EBF006C99BB /* CustomButton.swift in Sources */,
