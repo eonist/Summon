@@ -2,11 +2,11 @@
 import UIKit
 
 class MainView:UIView{
-    lazy var sendButton:SendButton = self.createSendButton()
+    var curView:UIView?
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = UIColor.black//debug
-        _ = sendButton
+        curView = createSubView(viewType: .response )
     }
     /**
      * Boilerplate
@@ -15,21 +15,30 @@ class MainView:UIView{
         fatalError("init(coder:) has not been implemented")
     }
 }
-/**
- * Create
- */
+
 extension MainView{
     /**
-     * Creates SendButton
+     * Creates view
      */
-    func createSendButton() -> SendButton{
-        let btn = SendButton.init(title: "Send pin")
-        addSubview(btn)
-        btn.activateConstraint{ view in/*constraints*/
-            let anchor = Constraint.anchor(view, to: self, align: .centerCenter, alignTo: .centerCenter)
-            let size = Constraint.size(view, size: CGSize(width:UIScreen.main.bounds.width-SendButton.margin,height:UIScreen.main.bounds.width-SendButton.margin))
-            return [anchor.x,anchor.y,size.w,size.h]
-        }
-        return btn
+    func createSubView(viewType:ViewType) -> UIView{
+        let view:UIView = {
+            switch viewType {
+            case .setup:
+                return UIView.init()
+            case .send:
+                return SendView.init(frame: UIScreen.main.bounds)
+            case .receive:
+                return UIView.init()
+            case .response:
+                return ResponseView.init(frame: UIScreen.main.bounds)
+            }
+        }()
+        addSubview(view)
+        return view
+    }
+}
+extension MainView{
+    enum ViewType {
+        case setup, send, receive, response
     }
 }

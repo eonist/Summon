@@ -20,7 +20,7 @@ class SendButton:ActionButton{
         self.titleLabel?.font = .boldSystemFont(ofSize: 32)//
     }
     /**
-     *
+     * Boilerplate
      */
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
