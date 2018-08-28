@@ -29,6 +29,14 @@ Summon is an Apple-watch app that let's a person summon another person to an exa
 **Q:** How do you do room detection and routing?  
 **A:** BIM service API. Basically it's the worldwide industry standard for getting building data. You can ask the service for building name and room name for your lat/long/alt. You can also get boundary box, room centre etc. To calc entering and exiting rooms. GPS inside buildings are sometimes difficult, but more and more buildings are adding GPS extenders. And apples CoreLocation relies on GPS, CellTower, wifi so should be fine for simple stuff. Routing is going to be really simple. `if same building`: 1. go to correct floor 2. go to correct room. `else if in other building`: 1. Go to street-level 2. Go to building entrance. 3. go to correct floor. 4. Go to correct room
 
+### Use-cases:
+- Airport: Airports are expanding beyond their initial design and thus become complicated to navigate. 
+- Hospitals: Your wife is expecting and you rush to make it to the birth of your first-born.
+- Construction sites: Navigate construction sites while looking on a phone can be dangerouse. 
+- Office buildings: Your going to a meeting somewhere in a new building you have never been to.
+- Shopping malls: Your husband gets lost while looking for the perfect pair of jeans.
+- Concert arenas: Your trying to find your friends after going to the toilet.
+
 ### **Research**:
 - In-depth Apple-watch CoreBluetooth tutorial: https://www.raywenderlich.com/336-core-bluetooth-in-watchos-tutorial
 - Detecting BT signal strength: https://stackoverflow.com/questions/33394740/watch-os-2-is-it-possible-to-get-bluetooth-signal-strength-of-connectivity-betw
