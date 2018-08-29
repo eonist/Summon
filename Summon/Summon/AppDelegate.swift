@@ -7,6 +7,14 @@ import UIKit
  * TODO: Basic UI 👈
  */
 
+/**
+ * - basic UI
+ * - ClLocManger x and y
+ * - Clloc floor
+ * - Fake BIM model api
+ * - Live loc updates UI steps
+ */
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?

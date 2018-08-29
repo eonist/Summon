@@ -7,7 +7,6 @@ class ViewController: UIViewController {
 //        self.view.backgroundColor = .gray
          _ = mainView
     }
-
     override var prefersStatusBarHidden:Bool {return true}/*hides statusbar*/
 }
 /**

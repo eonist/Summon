@@ -24,6 +24,9 @@
 		F1114E4A21353319006C99BB /* SendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1114E4921353319006C99BB /* SendView.swift */; };
 		F1114E4D21353C02006C99BB /* ResponseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1114E4C21353C02006C99BB /* ResponseView.swift */; };
 		F1114E4F21353DD8006C99BB /* DialogTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1114E4E21353DD8006C99BB /* DialogTextView.swift */; };
+		F1114E522135BBC0006C99BB /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1114E512135BBC0006C99BB /* Service.swift */; };
+		F1114E542135BC7A006C99BB /* DummyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1114E532135BC7A006C99BB /* DummyService.swift */; };
+		F1114E5621366B9A006C99BB /* Service+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1114E5521366B9A006C99BB /* Service+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		F1114E4921353319006C99BB /* SendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendView.swift; sourceTree = "<group>"; };
 		F1114E4C21353C02006C99BB /* ResponseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseView.swift; sourceTree = "<group>"; };
 		F1114E4E21353DD8006C99BB /* DialogTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogTextView.swift; sourceTree = "<group>"; };
+		F1114E512135BBC0006C99BB /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		F1114E532135BC7A006C99BB /* DummyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyService.swift; sourceTree = "<group>"; };
+		F1114E5521366B9A006C99BB /* Service+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Service+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,7 @@
 		F1114E3221347EBE006C99BB /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				F1114E502135BBAD006C99BB /* service */,
 				F1114E3321347EBE006C99BB /* third */,
 			);
 			path = lib;
@@ -146,6 +153,16 @@
 				F1114E4E21353DD8006C99BB /* DialogTextView.swift */,
 			);
 			path = response;
+			sourceTree = "<group>";
+		};
+		F1114E502135BBAD006C99BB /* service */ = {
+			isa = PBXGroup;
+			children = (
+				F1114E512135BBC0006C99BB /* Service.swift */,
+				F1114E5521366B9A006C99BB /* Service+Extension.swift */,
+				F1114E532135BC7A006C99BB /* DummyService.swift */,
+			);
+			path = service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,13 +238,16 @@
 			files = (
 				F1114E3E21347EBF006C99BB /* Constraint.swift in Sources */,
 				F1114E4121347FEA006C99BB /* SendButton.swift in Sources */,
+				F1114E522135BBC0006C99BB /* Service.swift in Sources */,
 				F1114E4A21353319006C99BB /* SendView.swift in Sources */,
 				F1114E3D21347EBF006C99BB /* Alignment.swift in Sources */,
 				F1114E23213443E8006C99BB /* ViewController.swift in Sources */,
 				F1114E43213482AF006C99BB /* AcceptButton.swift in Sources */,
 				F1114E21213443E8006C99BB /* AppDelegate.swift in Sources */,
 				F1114E3C21347EBF006C99BB /* ConstraintKind.swift in Sources */,
+				F1114E5621366B9A006C99BB /* Service+Extension.swift in Sources */,
 				F1114E4721351C07006C99BB /* MainView.swift in Sources */,
+				F1114E542135BC7A006C99BB /* DummyService.swift in Sources */,
 				F1114E3F21347EBF006C99BB /* ActionButton.swift in Sources */,
 				F1114E4D21353C02006C99BB /* ResponseView.swift in Sources */,
 				F1114E4F21353DD8006C99BB /* DialogTextView.swift in Sources */,

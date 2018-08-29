@@ -1,12 +1,14 @@
-
 import UIKit
 
+/**
+ * NOTE: It's nice to have mainView as a sort of container, because you might want to have a header and a footer as well
+ */
 class MainView:UIView{
     var curView:UIView?
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = UIColor.black//debug
-        curView = createSubView(viewType: .response )
+        curView = createSubView(viewType: .response)
     }
     /**
      * Boilerplate
@@ -15,7 +17,6 @@ class MainView:UIView{
         fatalError("init(coder:) has not been implemented")
     }
 }
-
 extension MainView{
     /**
      * Creates view
