@@ -8,10 +8,12 @@ import UIKit
  */
 
 /**
- * - basic UI
+ * - basic UI 👈
+ * - timer that simulates the CLLocation manager 👈
+ * - Make gif-video 👈
  * - ClLocManger x and y
  * - Clloc floor
- * - Fake BIM model api
+ * - Fake BIM model api ✅
  * - Live loc updates UI steps
  */
 

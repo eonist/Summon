@@ -8,7 +8,7 @@ extension Service{
     /**
      * TODO: ⚠️️ Should throw of course
      */
-    func getBuildingName(loc:Loc) -> String?{
+    static func getBuildingName(loc:Loc) -> String?{
         guard let buildingData:BuildingData = getBuildingData(loc: loc) else {return nil}
         let buildingName:String = buildingData.name//getBuildingName(buildingData:buildingData) else {return nil}
         return buildingName
@@ -16,7 +16,7 @@ extension Service{
     /**
      * TODO: ⚠️️ Should throw of course
      */
-    func getRoomName(loc:Loc, floor:Int) -> String? {
+    static func getRoomName(loc:Loc, floor:Int) -> String? {
         guard let buildingData:BuildingData = getBuildingData(loc: loc) else {return nil}
         guard let roomData:RoomData = getRoomData(loc: loc, buildingData: buildingData, floor: floor) else {return nil}
         let roomName:String = roomData.roomName//getRoomName(buildingId:buildingId,roomId:roomId) else {return nil}
@@ -25,7 +25,7 @@ extension Service{
     /**
      * Returns buildingName and roomName for loc and floor
      */
-    func getBuildingNameAndRoomName(loc:Loc, floor:Int) -> BuildingNameAndRoomName? {
+    static func getBuildingNameAndRoomName(loc:Loc, floor:Int) -> BuildingNameAndRoomName? {
         let buildingName:String? = getBuildingName(loc: loc)
         let roomName:String? = getRoomName(loc: loc, floor: floor)
         return (buildingName:buildingName,roomName:roomName)
