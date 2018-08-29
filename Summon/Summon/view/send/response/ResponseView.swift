@@ -4,7 +4,7 @@ class ResponseView:UIView{
     var textView:DialogTextView?
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = .purple//debug
+        self.backgroundColor = .clear//debug
         textView = createText()
     }
     /**
@@ -17,15 +17,17 @@ class ResponseView:UIView{
 /**
  *
  */
-extension ResponseView{
+extension UIView{
     /**
      * Creates EditableText
      */
-    func createText() -> DialogTextView{
-        let textFieldHeight:CGFloat = 160
+    func createText(textFieldHeight:CGFloat = 220, textStr:String = "Test") -> DialogTextView{
+//        let textFieldHeight:CGFloat = 220
         let centerY:CGFloat = (UIScreen.main.bounds.size.height/2) - (textFieldHeight/2)
-        let rect:CGRect = CGRect.init(x: 0, y: centerY, width: UIScreen.main.bounds.width, height: textFieldHeight)
+        let margin:CGFloat = 40
+        let rect:CGRect = CGRect.init(x: margin, y: centerY, width: UIScreen.main.bounds.width-margin*2, height: textFieldHeight)
         let text:DialogTextView = DialogTextView.init(frame: rect)
+        text.text = textStr
         addSubview(text)
         return text
     }

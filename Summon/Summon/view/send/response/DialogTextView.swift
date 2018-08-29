@@ -3,7 +3,6 @@ import UIKit
 class DialogTextView:UITextView,UITextViewDelegate{
     override init(frame: CGRect, textContainer: NSTextContainer?) {
         super.init(frame: frame, textContainer: textContainer)
-        
         setup()
         //applyGestureRecognizer(view:self)
     }
@@ -23,7 +22,7 @@ extension DialogTextView{
      */
     func setup(){//configDesign
         self.text = "John text green master \n dynamics flat borrow brown"
-        self.font = .systemFont(ofSize: 24)
+//        self.font = .systemFont(ofSize: 32)
         
         self.textAlignment = .center
         //textField.isMultipleTouchEnabled!!?!???
@@ -32,8 +31,8 @@ extension DialogTextView{
         self.isScrollEnabled = false
         self.isEditable = true//maybe toggle editable on touch etc
         self.textColor = .white
-        self.font = .systemFont(ofSize: 24)
-        self.backgroundColor = UIColor.green
+        self.font = .systemFont(ofSize: 36)
+        self.backgroundColor = UIColor.clear
         // Now the this should work
         
         //        self.layer.cornerRadius = 6//rounded corners for regular

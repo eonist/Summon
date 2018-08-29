@@ -17,6 +17,13 @@ import UIKit
  * - Live loc updates UI steps
  */
 
+
+/**
+ * Click send -> nav -> add ReceiveStepView
+ * Click accept -> nav -> stepIndex -> ReceiveStepView.setState (step:steps[stepIndex];stepIndex += 1)
+ * click view.addGestureTap -> nav.setView(.receiveStepView) -> iterates -> and so on
+ */
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
@@ -30,3 +37,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidBecomeActive(_ application: UIApplication) { }
     func applicationWillTerminate(_ application: UIApplication) { }
 }
+

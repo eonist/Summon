@@ -3,7 +3,7 @@ import Foundation
 class DeclineButton:ActionButton{
     override init(title: String) {
         super.init(title: title)
-        self.backgroundColor = .green
+        self.backgroundColor = .red
         self.setTitleColor(.white, for: .normal)
     }
     /**
