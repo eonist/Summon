@@ -4,7 +4,6 @@ import UIKit
  * These are universal methods across all services
  */
 extension Service{
-    
     /**
      * TODO: ⚠️️ Should throw of course
      */
@@ -32,9 +31,10 @@ extension Service{
     }
 }
 /**
- * TODO: ⚠️️ Use structs 
+ * TODO: ⚠️️ Use structs
  */
-typealias Loc = (long:CGFloat,lat:CGFloat)
+//typealias Loc = (long:CGFloat,lat:CGFloat)
 typealias BuildingNameAndRoomName = (buildingName:String?,roomName:String?)
 typealias BuildingData = (id:Int, name:String, loc:Loc, radius:CGFloat, rooms:[RoomData])
 typealias RoomData = (roomId:Int, roomName:String,floor:Int,loc:Loc, radius:CGFloat)
+

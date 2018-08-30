@@ -7,7 +7,6 @@ class ViewController: UIViewController {
 //        self.view.backgroundColor = .gray
          _ = mainView
         testDummyService()
-        
     }
     override var prefersStatusBarHidden:Bool {return true}/*hides statusbar*/
 }
@@ -52,6 +51,25 @@ extension ViewController{
         
         let westWingRoom405:String? = DummyService.getRoomName(loc: DummyService.westWing.rooms.first!.loc, floor: 4)
         Swift.print("westWingRoom405:  \(String(describing: westWingRoom405))")//405
+    }
+    /**
+     * Basic teat for LocManager
+     * TODO: add callback for loc update
+     * TODO: add callback for entrance into region
+     */
+    func testLocManager(){
+        let locManager = LocationManager.sharedInstance
+        locManager.authorizationCallback = { (_ isAuthorized:Bool) in
+            Swift.print("test.isAuthorized:  \(isAuthorized)")
+            if isAuthorized {
+                locManager.onBeganMonitoring = {
+                    Swift.print("test.onBeganMonitoring")
+                }
+                locManager.onExitRegion = {
+                    Swift.print("test.onExitRegion")
+                }
+            }
+        }
     }
 }
 

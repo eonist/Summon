@@ -30,6 +30,13 @@
 		F1114E5921368C93006C99BB /* ReceiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1114E5821368C93006C99BB /* ReceiveView.swift */; };
 		F1114E5B21369397006C99BB /* ReceiveStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1114E5A21369397006C99BB /* ReceiveStepView.swift */; };
 		F1114E5D2136A5AF006C99BB /* Nav.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1114E5C2136A5AF006C99BB /* Nav.swift */; };
+		F1114E7721384413006C99BB /* Loc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1114E6F21384413006C99BB /* Loc.swift */; };
+		F1114E7821384413006C99BB /* Loc+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1114E7021384413006C99BB /* Loc+Extension.swift */; };
+		F1114E7921384413006C99BB /* LocManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1114E7221384413006C99BB /* LocManager.swift */; };
+		F1114E7A21384413006C99BB /* LocManager+CallBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1114E7321384413006C99BB /* LocManager+CallBack.swift */; };
+		F1114E7B21384413006C99BB /* LocManager+Variable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1114E7421384413006C99BB /* LocManager+Variable.swift */; };
+		F1114E7C21384413006C99BB /* LocManager+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1114E7521384413006C99BB /* LocManager+Core.swift */; };
+		F1114E7D21384413006C99BB /* LocManager+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1114E7621384413006C99BB /* LocManager+Delegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +65,13 @@
 		F1114E5821368C93006C99BB /* ReceiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveView.swift; sourceTree = "<group>"; };
 		F1114E5A21369397006C99BB /* ReceiveStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveStepView.swift; sourceTree = "<group>"; };
 		F1114E5C2136A5AF006C99BB /* Nav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nav.swift; sourceTree = "<group>"; };
+		F1114E6F21384413006C99BB /* Loc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loc.swift; sourceTree = "<group>"; };
+		F1114E7021384413006C99BB /* Loc+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Loc+Extension.swift"; sourceTree = "<group>"; };
+		F1114E7221384413006C99BB /* LocManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocManager.swift; sourceTree = "<group>"; };
+		F1114E7321384413006C99BB /* LocManager+CallBack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LocManager+CallBack.swift"; sourceTree = "<group>"; };
+		F1114E7421384413006C99BB /* LocManager+Variable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LocManager+Variable.swift"; sourceTree = "<group>"; };
+		F1114E7521384413006C99BB /* LocManager+Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LocManager+Core.swift"; sourceTree = "<group>"; };
+		F1114E7621384413006C99BB /* LocManager+Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LocManager+Delegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +121,7 @@
 		F1114E3221347EBE006C99BB /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				F1114E6D21384413006C99BB /* location */,
 				F1114E502135BBAD006C99BB /* service */,
 				F1114E3321347EBE006C99BB /* third */,
 			);
@@ -182,6 +197,36 @@
 			path = receive;
 			sourceTree = "<group>";
 		};
+		F1114E6D21384413006C99BB /* location */ = {
+			isa = PBXGroup;
+			children = (
+				F1114E6E21384413006C99BB /* loc */,
+				F1114E7121384413006C99BB /* manager */,
+			);
+			path = location;
+			sourceTree = "<group>";
+		};
+		F1114E6E21384413006C99BB /* loc */ = {
+			isa = PBXGroup;
+			children = (
+				F1114E6F21384413006C99BB /* Loc.swift */,
+				F1114E7021384413006C99BB /* Loc+Extension.swift */,
+			);
+			path = loc;
+			sourceTree = "<group>";
+		};
+		F1114E7121384413006C99BB /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				F1114E7221384413006C99BB /* LocManager.swift */,
+				F1114E7321384413006C99BB /* LocManager+CallBack.swift */,
+				F1114E7421384413006C99BB /* LocManager+Variable.swift */,
+				F1114E7521384413006C99BB /* LocManager+Core.swift */,
+				F1114E7621384413006C99BB /* LocManager+Delegate.swift */,
+			);
+			path = manager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -255,8 +300,12 @@
 			files = (
 				F1114E3E21347EBF006C99BB /* Constraint.swift in Sources */,
 				F1114E4121347FEA006C99BB /* SendButton.swift in Sources */,
+				F1114E7B21384413006C99BB /* LocManager+Variable.swift in Sources */,
+				F1114E7721384413006C99BB /* Loc.swift in Sources */,
 				F1114E522135BBC0006C99BB /* Service.swift in Sources */,
+				F1114E7D21384413006C99BB /* LocManager+Delegate.swift in Sources */,
 				F1114E4A21353319006C99BB /* SendView.swift in Sources */,
+				F1114E7A21384413006C99BB /* LocManager+CallBack.swift in Sources */,
 				F1114E5B21369397006C99BB /* ReceiveStepView.swift in Sources */,
 				F1114E3D21347EBF006C99BB /* Alignment.swift in Sources */,
 				F1114E23213443E8006C99BB /* ViewController.swift in Sources */,
@@ -264,9 +313,12 @@
 				F1114E43213482AF006C99BB /* AcceptButton.swift in Sources */,
 				F1114E21213443E8006C99BB /* AppDelegate.swift in Sources */,
 				F1114E3C21347EBF006C99BB /* ConstraintKind.swift in Sources */,
+				F1114E7921384413006C99BB /* LocManager.swift in Sources */,
+				F1114E7821384413006C99BB /* Loc+Extension.swift in Sources */,
 				F1114E5621366B9A006C99BB /* Service+Extension.swift in Sources */,
 				F1114E4721351C07006C99BB /* MainView.swift in Sources */,
 				F1114E542135BC7A006C99BB /* DummyService.swift in Sources */,
+				F1114E7C21384413006C99BB /* LocManager+Core.swift in Sources */,
 				F1114E3F21347EBF006C99BB /* ActionButton.swift in Sources */,
 				F1114E4D21353C02006C99BB /* ResponseView.swift in Sources */,
 				F1114E4F21353DD8006C99BB /* DialogTextView.swift in Sources */,

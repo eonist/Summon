@@ -8,7 +8,6 @@ class ReceiveStepView:UIView,UIGestureRecognizerDelegate{
 //    var onPressed = {}/* Called when the view goes to pressed state (set desired appearance) */
     var onReleased = {}/* Called when the view is released (perform desired action) */
 
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = .clear//debug
@@ -69,13 +68,12 @@ extension ReceiveStepView{
         let margin:CGFloat = 40
 //        let rect = CGRect.init(x: 0, y: 0, width: 132, height: 132)
         let view = UIImageView.init(image: #imageLiteral(resourceName: "arrow"))//UIView(frame: rect)
-        view.frame.origin.x = UIScreen.main.bounds.width/2 - view.frame.size.width / 2
+        view.frame.origin.x = UIScreen.main.bounds.width/2 - view   .frame.size.width / 2
         view.frame.origin.y = margin
         view.backgroundColor = .purple
         addSubview(view)
         return view
     }
-    
     /**
      *
      */
