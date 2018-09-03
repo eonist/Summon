@@ -36,7 +36,7 @@ Summon is an Apple-watch app that let's a person summon another person to an exa
 - Office buildings: Your going to a meeting somewhere in a new building you have never been to.
 - Shopping malls: Your husband gets lost while looking for the perfect pair of jeans.
 - Concert arenas: Your trying to find your friends after going to the toilet.
-- Guiding humans with vision disablities to their destinations through subtle vibrations on the rist
+- Guiding humans with vision disabilities to their destinations through subtle vibrations on the rist
 
 ### **Research**:
 - In-depth Apple-watch CoreBluetooth tutorial: https://www.raywenderlich.com/336-core-bluetooth-in-watchos-tutorial
